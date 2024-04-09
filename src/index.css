@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --blackColor: black;
+  --whiteColor: white;
+  --greyLightColor: #FAFBFF;
+  --greyLightTextColor: #B5B7C0;
+  --greyTextUserColor: #757575;
+  --greyTextColor: #292D32;
+  --blueLightTextColor: #9197B3;
+  --greyLineColor: #EEEEEE;
+  --accentColor: #5932EA;
+  --greenLightColor: #16C098;
+  --greenDarkColor: #008767;
+  --redLightColor: #FFC5C5;
+  --redDarkColor: #DF0404;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--greyLightTextColor) var(--greyLightColor);
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--greyLightColor);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--greyLightTextColor);
+  border-radius: 20px;
+  border: 3px solid var(--greyLightColor);
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  max-height: 100vh;
+  background: var(--greyLightColor);
+  color: var(--greyTextColor);
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  width: 100%;
+  padding: 40px 96px 0 70px;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.main__header {
+  color: var(--blackColor);
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1440px) {
+  .main__header {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+}
+
+.icon-chevron {
+  fill: white;
+}
